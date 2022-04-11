@@ -9,5 +9,5 @@ interface Api {
      * 获取天气信息
      */
     @GET("zaihuishou/Kotlin-mvvm/master/data.json")
-    fun getWeather(): Deferred<Weather>
+    suspend fun getWeather(): Weather
 }
